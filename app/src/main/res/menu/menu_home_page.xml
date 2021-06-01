@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/student_reg_page"
+        android:enabled="true"
+        android:icon="@drawable/student_add"
+        android:title="Student Register"/>
+    <item
+        android:id="@+id/teacher_reg_page"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_person_add_alt_1_24"
+        android:title="Teacher Register"/>
+
+    <item
+        android:id="@+id/lesson_reg_page"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_bookmark_add_24"
+        android:title="Lesson Register"/>
+    <item
+        android:id="@+id/control_page"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_date_range_24"
+        android:title="Control panel"/>
+</menu>

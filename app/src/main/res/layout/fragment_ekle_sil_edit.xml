@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.adminPage.control.EkleSilEditActivity">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/colorGreen"
+        android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/ic_baseline_arrow_back_ios_new_24" />
+    </RelativeLayout>
+
+    <TextView
+            android:id="@+id/reg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="150dp"
+            android:layout_centerHorizontal="true"
+            android:text="Register"
+            android:textSize="16sp"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/regStartData"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/reg"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/blue_stroke_back"
+            android:gravity="center"
+            android:hint="Start data"
+            android:inputType="datetime"
+            android:textColor="@color/black"
+            android:textColorHint="@color/colorGrey"
+            android:textSize="14sp"
+            android:ems="10"/>
+
+        <EditText
+            android:id="@+id/regEndData"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/reg"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginRight="40dp"
+            android:gravity="center"
+            android:hint="End data"
+            android:inputType="datetime"
+            android:background="@drawable/blue_stroke_back"
+            android:textColor="@color/black"
+            android:textColorHint="@color/colorGrey"
+            android:textSize="14sp"
+            android:ems="10"/>
+
+        <TextView
+            android:id="@+id/ekle_sil"
+            android:layout_below="@+id/regEndData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:text="Ekle-Sil"
+            android:textSize="16sp"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/ESStartData"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/ekle_sil"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/blue_stroke_back"
+            android:gravity="center"
+            android:hint="2021-01-01"
+            android:inputType="datetime"
+            android:textColor="@color/black"
+            android:textColorHint="@color/colorGrey"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/ESEndData"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/ekle_sil"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/blue_stroke_back"
+            android:gravity="center"
+            android:hint="2021-01-01"
+            android:inputType="datetime"
+            android:textColor="@color/black"
+            android:textColorHint="@color/colorGrey"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/LSS"
+            android:layout_below="@+id/ESEndData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:text="Lesson Success Submission"
+            android:textSize="16sp"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/LSSStartData"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/LSS"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/blue_stroke_back"
+            android:gravity="center"
+            android:hint="Start data"
+            android:inputType="datetime"
+            android:textColor="@color/black"
+            android:textColorHint="@color/colorGrey"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/LSSEndData"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/LSS"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/blue_stroke_back"
+            android:gravity="center"
+            android:hint="End data"
+            android:inputType="datetime"
+            android:textColor="@color/black"
+            android:textColorHint="@color/colorGrey"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/control_edit"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/LSSEndData"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="70dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/send_button"
+            android:drawableLeft="@drawable/ic_baseline_done_all_24"
+            android:fontFamily="@font/roboto_medium"
+            android:paddingLeft="15dp"
+            android:text="Save"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+
+</RelativeLayout>

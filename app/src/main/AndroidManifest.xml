@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.ktmuyoklama">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:requestLegacyExternalStorage="true"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.KTMUYoklama">
+        <activity android:name=".view.SearchStudent"></activity>
+        <activity
+            android:name=".view.adminPage.menu.Profile"
+            android:label="@string/title_activity_menu"
+            android:theme="@style/Theme.KTMUYoklama.NoActionBar" />
+        <activity android:name=".view.studentPage.home.HomePageStudent" />
+        <activity android:name=".view.teacherPage.facereconition.FaceRecognitionPage" />
+        <activity android:name=".view.teacherPage.home.HomePageTeacher" />
+        <activity android:name=".view.image"/>
+        <activity android:name=".view.RegisterPage" />
+        <activity android:name=".view.ListLessonPage" />
+        <activity android:name=".view.ListTeacherPage" />
+        <activity android:name=".view.ListStudentPage" />
+        <activity android:name=".view.RegisterTeacherPage" />
+        <activity android:name=".view.RegisterStudentPage" />
+        <activity android:name=".view.adminPage.control.RegisterEditActivity"/>
+        <activity android:name=".view.adminPage.control.EkleSilEditActivity"/>
+        <activity android:name=".view.adminPage.control.LSSEditActivity"/>
+        <activity android:name=".view.adminPage.home.HomePageAdmin" />
+        <activity android:name=".view.MainActivity" />
+        <activity android:name=".view.SplashScreenPage">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

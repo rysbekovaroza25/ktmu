@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.adminPage.register.Lesson_Register_Fragment">
+
+    <EditText
+        android:id="@+id/lesson_kod"
+        android:layout_width="230dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/blue_stroke_back"
+        android:gravity="center"
+        android:hint="Код урока"
+        android:imeOptions="actionNext"
+        android:inputType="text"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorHint="@color/colorGrey"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/lesson_week"
+        android:layout_width="105dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_toEndOf="@+id/lesson_kod"
+        android:layout_toRightOf="@+id/lesson_kod"
+        android:gravity="center"
+        android:hint="Weeks"
+        android:inputType="number"
+        android:background="@drawable/blue_stroke_back"
+        android:textColor="@color/black"
+        android:textColorHint="@color/colorGrey"
+        android:textSize="14sp" />
+
+    <Spinner
+        android:id="@+id/fac_sp"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/lesson_kod"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@id/fac_les"
+        android:layout_width="105dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/lesson_week"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_toEndOf="@+id/fac_sp"
+        android:layout_toRightOf="@+id/fac_sp"
+        android:gravity="center"
+        android:text="Faculty"
+        android:textColor="@color/black" />
+
+    <Spinner
+        android:id="@+id/dep_sp"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/fac_sp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@id/dep_les"
+        android:layout_width="105dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/fac_les"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_toEndOf="@+id/dep_sp"
+        android:layout_toRightOf="@+id/dep_sp"
+        android:gravity="center"
+        android:text="Department"
+        android:textColor="@color/black" />
+
+    <AutoCompleteTextView
+        android:id="@+id/teacher_search"
+        android:layout_width="230dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/dep_sp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/blue_stroke_back"
+        android:gravity="center"
+        android:hint="Search teacher"
+        android:textColor="@color/colorBlack"
+        android:textColorHint="@color/colorGrey"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/teacher_text"
+        android:layout_width="105dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/dep_les"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_toEndOf="@+id/teacher_search"
+        android:layout_toRightOf="@+id/teacher_search"
+        android:gravity="center"
+        android:text="Teacher"
+        android:textColor="@color/black" />
+
+    <Spinner
+        android:id="@+id/status_sp"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/teacher_search"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="105dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/teacher_text"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_toEndOf="@+id/status_sp"
+        android:layout_toRightOf="@+id/status_sp"
+        android:gravity="center"
+        android:text="Status"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/semester"
+        android:layout_width="230dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/status_sp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/blue_stroke_back"
+        android:gravity="center"
+        android:hint="Semester"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorHint="@color/colorGrey"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/lesson_submit"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/status"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/send_button"
+        android:drawableLeft="@drawable/ic_send_black_24dp"
+        android:fontFamily="@font/roboto_medium"
+        android:paddingLeft="15dp"
+        android:text="Submit"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+
+</RelativeLayout>

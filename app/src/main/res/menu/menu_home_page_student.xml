@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/yoklama_page"
+        android:enabled="true"
+        android:icon="@drawable/ic_tag_faces_black_24dp"
+        android:title="Devamsizlik"/>
+
+    <item
+        android:id="@+id/control_student_page"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_bookmark_add_24"
+        android:title="Derse kaydol"/>
+
+</menu>

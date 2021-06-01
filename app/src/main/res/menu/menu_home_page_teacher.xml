@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home_page_teacher"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="Home"/>
+    <item
+        android:id="@+id/yoklama_page"
+        android:enabled="true"
+        android:icon="@drawable/ic_tag_faces_black_24dp"
+        android:title="Yoklama"/>
+
+    <item
+        android:id="@+id/control_teacher_page"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_date_range_24"
+        android:title="Control panel"/>
+
+</menu>
